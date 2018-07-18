@@ -8,7 +8,7 @@ let events = {
             buytickets: "https://ticketfly.tickets-online.com/"
         },
         {
-            image: "images/bridgestone",
+            image: "images/bridgestone.jpeg",
             date: "9/17/2018",
             location: "Bridgestone",
             collaborators: "The Beatles",
