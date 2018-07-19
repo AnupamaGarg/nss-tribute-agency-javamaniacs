@@ -1,13 +1,13 @@
 document.getElementById('Career').onclick = function URL() {
-    location.href = './career.html'};
+    location.href = 'career.html'};
 document.getElementById('Personal').onclick = function URL() {
-    location.href = 'http:google.com'};
+    location.href = 'personal.html'};
 document.getElementById('Extras').onclick = function URL() {
-    location.href = './extras.html'};
+    location.href = 'extras.html'};
 document.getElementById('Newsfeed').onclick = function URL() {
-    location.href = 'http:google.com'};
+    location.href = 'newsfeed.html'};
  document.getElementById('Home').onclick = function URL() {
-    location.href = 'http:google.com'};
+    location.href = '#'};
 
 
     document.getElementById('myButton').onclick= function URL(){location.href='http://www.facebook.com/PaulMcCartney/'}
