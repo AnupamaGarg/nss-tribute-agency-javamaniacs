@@ -9,8 +9,8 @@ document.getElementById("Wikipedia").innerHTML = `<a href="https://en.wikipedia.
 document.getElementById("Fan-Forum").innerHTML = `<a href="http://maccaboard.paulmccartney.com//">
 <button type="button" class="btn btn-success">Fan Forum</button></a>`;
 
-document.getElementById("Itunes").innerHTML = `<a href="https://itunes.apple.com/us/artist/paul-mccartney/12224">
-<button type="button" class="btn btn-danger btn-block">Itunes</button></a>`;
+document.getElementById("iTunes").innerHTML = `<a href="https://itunes.apple.com/us/artist/paul-mccartney/12224">
+<button type="button" class="btn btn-danger btn-block">iTunes</button></a>`;
 
 document.getElementById("Spotify").innerHTML = `<a href="https://open.spotify.com/artist/4STHEaNw4mPZ2tzheohgXB">
 <button type="button" class="btn btn-warning btn-block">Spotify</button></a>`;
