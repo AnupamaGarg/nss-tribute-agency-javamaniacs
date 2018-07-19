@@ -26,7 +26,7 @@ introText.innerHTML = `<p>${careerDatabase.intro[0].content1}</p>` + `<p>${caree
 introHeader.appendChild(introText);
 
 const skillContainer = createDiv();
-skillContainer.classList.add("bg-secondary", "py-1", "my-4");
+skillContainer.classList.add("light-blue", "py-1", "my-4");
 careerContent.appendChild(skillContainer);
 
 //Skills section
@@ -36,42 +36,64 @@ skillsHeader.innerHTML = `<h2 class = "text-center">Skills</h2>`;
 
 skillContainer.appendChild(skillsHeader)
 
-const skills = createContainer();
-skills.classList.add("bg-secondary", "my-3");
+//const skills = createContainer();
+//skills.classList.add("bg-transparent", "my-3");
 
 
-skills.innerHTML = `
-<div class="card-deck border-0 py-1 text-light">
-    <div class="card border-0 bg-transparent">
-        <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[0].img} alt="Card image cap">
-        <div class="card-body pb-0">
-            <h5 class="card-title">${careerDatabase.skills[0].skill}</h5>
-            <p class="card-text">${careerDatabase.skills[0].description}</p>
-        </div>
-    </div>
-    <div class="card border-0 bg-transparent">
-        <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[1].img} alt="Card image cap">
-        <div class="card-body pb-0">
-            <h5 class="card-title">${careerDatabase.skills[1].skill}</h5>
-            <p class="card-text">${careerDatabase.skills[1].description}</p>
-        </div>
-    </div>
-    <div class="card border-0 bg-transparent">
-        <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[2].img} alt="Card image cap">
-        <div class="card-body pb-0">
-            <h5 class="card-title">${careerDatabase.skills[2].skill}</h5>
-            <p class="card-text">${careerDatabase.skills[2].description}</p>
-        </div>
-    </div>
-</div>`
+let skillsLoop = () => {
+  let loop = "";
+  for (let i = 0; i < careerDatabase.skills.length; i++) {
+  loop += 
+        `<div class="card border-0 bg-transparent">
+            <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[i].img} alt="Card image cap">
+            <div class="card-body pb-0">
+                <h5 class="card-title">${careerDatabase.skills[i].skill}</h5>
+                <p class="card-text">${careerDatabase.skills[i].description}</p>
+            </div>     
+        </div>`
+}
+return loop;
+}
 
-skillContainer.appendChild(skills);
+let skillsCards = skillsLoop();
+let skillsContent = `<div class="card-deck border-0 py-1 text-light">${skillsCards}</div>`
+let skillsParent = createContainer();
+skillsParent.innerHTML = skillsContent;
+
+skillsHeader.appendChild(skillsParent);
+
+// skills.innerHTML = `
+// <div class="card-deck border-0 py-1 text-light">
+//     <div class="card border-0 bg-transparent">
+//         <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[0].img} alt="Card image cap">
+//         <div class="card-body pb-0">
+//             <h5 class="card-title">${careerDatabase.skills[0].skill}</h5>
+//             <p class="card-text">${careerDatabase.skills[0].description}</p>
+//         </div>
+//     </div>
+//     <div class="card border-0 bg-transparent">
+//         <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[1].img} alt="Card image cap">
+//         <div class="card-body pb-0">
+//             <h5 class="card-title">${careerDatabase.skills[1].skill}</h5>
+//             <p class="card-text">${careerDatabase.skills[1].description}</p>
+//         </div>
+//     </div>
+//     <div class="card border-0 bg-transparent">
+//         <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[2].img} alt="Card image cap">
+//         <div class="card-body pb-0">
+//             <h5 class="card-title">${careerDatabase.skills[2].skill}</h5>
+//             <p class="card-text">${careerDatabase.skills[2].description}</p>
+//         </div>
+//     </div>
+// </div>`
+
+//skillContainer.appendChild(skills);
 
 
 //Creates the 'works' cards
 const works = createContainer();
 const worksHeader = createContainer();
-worksHeader.innerHTML = `<h2 class = "text-right">Notable Work</h2>`;
+worksHeader.innerHTML = `<h2 class = "text-center">Notable Work</h2>`;
 //Appends works cards to the page
 careerContent.appendChild(worksHeader);
 worksHeader.appendChild(works)
@@ -129,14 +151,14 @@ careerContent.appendChild(worksParent);
 
 const collabCards = createContainer();
 const collabsTitle = createDiv();
-collabsTitle.classList.add("my-5");
-collabsTitle.innerHTML = `<h2 class = "container">Collaborations</h2>`;
+collabsTitle.classList.add("my-5", "turqouise", "py-3");
+collabsTitle.innerHTML = `<h2 class = "container text-center text-white py-3">Collaborations</h2>`;
 
 careerContent.appendChild(collabsTitle);
 collabsTitle.appendChild(collabCards);
 
 collabCards.classList.add("my-3");
-collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
+collabCards.innerHTML = `<div class="card-columns light-blue p-2 my-3 rounded">
 <div class="card">
   <img class="card-img-top" src="${careerDatabase.collabs[0].image}" alt="Card image cap">
   <div class="card-body">
@@ -144,12 +166,12 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
     <p class="card-text">Lorem ipsum dolor amet four dollar toast synth pabst, shabby chic kogi direct trade flexitarian fam. Yr gastropub chambray adaptogen. Food truck af offal, godard celiac vape knausgaard drinking vinegar butcher roof party normcore. Cloud bread tilde paleo coloring book meditation blog.</p>
   </div>
 </div>
-<div class="card p-3 bg-danger text-white">
+<div class="card p-3 charcoal text-white">
   <blockquote class="blockquote mb-0 card-body text-white">
     <p>If he ever runs for president, Paul's got my vote</p>
     <footer class="blockquote-footer text-white">
       <small class="">
-        Someone famous in <cite title="Source Title">A magazine</cite>
+        Someone famous in <cite title="Source Title">a magazine</cite>
       </small>
     </footer>
   </blockquote>
@@ -162,7 +184,7 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
-<div class="card bg-warning text-white text-center p-3">
+<div class="card tangerine text-white text-center p-3">
   <blockquote class="blockquote mb-0 text-white">
     <p>Paul is the greatest musician I have ever worked with.</p>
     <footer class="blockquote-footer text-white">
@@ -175,11 +197,11 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
 <div class="card">
   <img class="card-img" src="img/dave.png" alt="Card image">
 </div>
-<div class="card p-3 text-right">
-  <blockquote class="blockquote mb-0">
+<div class="card p-3 text-right tangerine">
+  <blockquote class="blockquote mb-0 text-white">
     <p>He founded The Beatles. How much cooler can you get?</p>
-    <footer class="blockquote-footer">
-      <small class="text-muted">
+    <footer class="blockquote-footer text-white">
+      <small class="text-white">
         Someone famous on <cite title="Source Title">some website</cite>
       </small>
     </footer>
@@ -193,7 +215,7 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
-<div class="card bg-primary text-white text-right p-3">
+<div class="card charcoal text-white text-right p-3">
   <blockquote class="blockquote mb-0 text-white">
     <p>He's the man</p>
     <footer class="blockquote-footer text-white">
@@ -220,6 +242,7 @@ let awardsLoop = () => {
                 <div class="card-body">
                     <h5 class="card-title">Award: ${careerDatabase.awards[i].award}</h5>
                     <p class="card-text">Song: ${careerDatabase.awards[i].song}</p>
+                    <p class="card-text">Song: ${careerDatabase.awards[i].year}</p>
                 </div>
             </div>`
 }

@@ -22,14 +22,14 @@ const introP = {
 //Skill data
 const guitar = {
     skill: "Playing Guitar",
-    description: "Paul has been playing guitar his entire life.",
-    img: "img/electric-guitar.svg"
+    description: "Paul has been playing guitar for pretty much his entire life.",
+    img: "img/guitar.svg"
 }
 
 const writing = {
     skill: "Songwriting",
     description: "He's written millions of great songs.",
-    img: "img/vinyl.svg"
+    img: "img/piano.svg"
 }
 
 const singing = {
@@ -78,17 +78,20 @@ const stevie = {
 //Awards
 const award1 = {
     award : "Best Pop Performance",
-    song: "Band on the Run"
+    song: "Band on the Run",
+    year: "1975"
 }
 
 const award2 = {
     award: "Best Rock Song",
-    song: "Cut Me Some Slack"
+    song: "Cut Me Some Slack",
+    year: "2014"
 }
 
 const award3 = {
     award: "Song of the Year",
-    song: "Michelle"
+    song: "Michelle",
+    year: "1967"
 }
 
 //Push data in to the appropriate array
