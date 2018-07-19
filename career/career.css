@@ -1,0 +1,20 @@
+.jumbotron {
+    background: url(img/headphones.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.icon {
+    width: 50% !important;
+}
+
+.skills-header {
+    height: 100%;
+}
+
+.shadows {
+-webkit-box-shadow: 10px 8px 42px -10px rgba(79,79,79,1);
+-moz-box-shadow: 10px 8px 42px -10px rgba(79,79,79,1);
+box-shadow: 10px 8px 42px -10px rgba(79,79,79,1);
+}
