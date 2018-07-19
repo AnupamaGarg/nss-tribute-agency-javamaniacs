@@ -19,7 +19,8 @@
 
 }
 body {
-    background-color: rgba(249, 250, 251, 0.733);
+    background-color:;
+    
 }
 
 .headLine {
@@ -37,29 +38,32 @@ body {
      padding-bottom: .5em;
      padding-top: .5em;
 }
+/* artic */
 .articleImg {
     margin-left: 1em;
+    box-shadow: 2px 2px 2px black;
 }
 .articleContent {
     padding: 1em;
 }
 .articles {
-    background-color: #70ADB0;
+    /* background-color: #8DCAD0; */
 }
 .main-articles {
     padding-bottom: 2em;
     padding-top: 2em;
-    background-color: #444448;
-    color: #F9FAFB;
-    text-shadow:
+    background-color: #70ADB0;
+    color: #444448;
+    /* text-shadow:
      -1px -1px 0 black,
      1px -1px 0 black,
      -1px 1px 0 black,
-     1px 1px 0 black;  
+     1px 1px 0 black;   */
      margin-bottom: 2em;
      padding-bottom: .5em;
      padding-top: .5em;
 }
+/* event cards */
 .eventsDiv {
     background-color: #EBA862;
     padding-top: 2em;
@@ -73,11 +77,12 @@ body {
      .5px -.5px 0 black,
      -.5px .5px 0 black,
      .5px .5px 0 black;  
-     box-shadow: 1px 1px #444448;
+     box-shadow: 1px 1px 1px #444448;
 }
 .card {
-    box-shadow: 2px 2px #444448;
+    box-shadow: 2px 2px 2px #444448;
 }
+/* Jumbotron styles */
 .jumbotron {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.pristineauction.com/27/272975/main_2-Paul-McCartney-Signed-Left-Handed-Hofner-Beatle-Bass-Guitar-Caiazzo-LOA-PSA-LOA-PristineAuction.com.jpg)no-repeat center fixed;
     background-size: cover;
