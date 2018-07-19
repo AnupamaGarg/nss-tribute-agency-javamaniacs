@@ -43,7 +43,7 @@ let events = {
             relevance: "Relevance to artist 10 out of 10"
         },
         {
-            image: "images/beatles.jpeg",
+            image: "images/beatles4.jpeg",
             date: "Jun 15, 2018",
             location: "Liverpool, England",
             title: "Paul McCartney, British Musician",
