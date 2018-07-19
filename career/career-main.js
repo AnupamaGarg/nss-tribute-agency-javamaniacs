@@ -21,7 +21,7 @@ introHeader.innerHTML = `<h2 class = "text-center">${careerDatabase.intro[0].tit
 careerContent.appendChild(introHeader)
 
 const introText = createContainer();
-introText.innerHTML = `${careerDatabase.intro[0].content1}` + `${careerDatabase.intro[0].content2}`;
+introText.innerHTML = `<p>${careerDatabase.intro[0].content1}</p>` + `<p>${careerDatabase.intro[0].content2}</p>`;
 
 introHeader.appendChild(introText);
 
@@ -120,7 +120,7 @@ return loop;
 }
 
 let worksCards = worksLoop();
-let worksContent = `<div class="card-group shadows my-3">${worksCards}</div>`
+let worksContent = `<div class="card-group shadows my-3 rounded">${worksCards}</div>`
 let worksParent = createContainer();
 worksParent.innerHTML = worksContent;
 
@@ -141,7 +141,7 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
   <img class="card-img-top" src="${careerDatabase.collabs[0].image}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${careerDatabase.collabs[0].name}</h5>
-    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Lorem ipsum dolor amet four dollar toast synth pabst, shabby chic kogi direct trade flexitarian fam. Yr gastropub chambray adaptogen. Food truck af offal, godard celiac vape knausgaard drinking vinegar butcher roof party normcore. Cloud bread tilde paleo coloring book meditation blog.</p>
   </div>
 </div>
 <div class="card p-3 bg-danger text-white">
@@ -149,7 +149,7 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
     <p>If he ever runs for president, Paul's got my vote</p>
     <footer class="blockquote-footer text-white">
       <small class="">
-        Someone famous in <cite title="Source Title">Source Title</cite>
+        Someone famous in <cite title="Source Title">A magazine</cite>
       </small>
     </footer>
   </blockquote>
@@ -158,7 +158,7 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
   <img class="card-img-top" src="${careerDatabase.collabs[1].image}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${careerDatabase.collabs[1].name}</h5>
-    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    <p class="card-text">Lorem ipsum dolor amet venmo raclette cornhole lo-fi neutra lyft pitchfork pabst. Bicycle rights taiyaki street art tacos affogato, organic celiac kitsch authentic everyday cliche bushwick kickstarter semiotics adaptogen edison bulb. Squid pok pok glossier craft beer poutine shaman palo santo chillwave</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
@@ -177,10 +177,10 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
 </div>
 <div class="card p-3 text-right">
   <blockquote class="blockquote mb-0">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <p>He founded The Beatles. How much cooler can you get?</p>
     <footer class="blockquote-footer">
       <small class="text-muted">
-        Someone famous in <cite title="Source Title">Source Title</cite>
+        Someone famous on <cite title="Source Title">some website</cite>
       </small>
     </footer>
   </blockquote>
@@ -189,7 +189,7 @@ collabCards.innerHTML = `<div class="card-columns bg-dark p-2 my-3 rounded">
 <img class="card-img-top" src="${careerDatabase.collabs[2].image}">
   <div class="card-body">
     <h5 class="card-title">${careerDatabase.collabs[2].name}</h5>
-    <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+    <p class="card-text">Lorem ipsum dolor amet lo-fi neutra lyft pitchfork pabst. Bicycle rights taiyaki street art tacos affogato, organic celiac kitsch authentic everyday carry small batch cornhole. Literally pabst Tote bag taxidermy bicycle rights humblebrag vegan chartreuse.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
