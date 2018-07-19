@@ -9,6 +9,10 @@
     width: 50% !important;
 }
 
+.skills-header {
+    height: 100%;
+}
+
 .shadows {
     -webkit-box-shadow: 9px 13px 42px -10px rgba(79,79,79,1);
 -moz-box-shadow: 9px 13px 42px -10px rgba(79,79,79,1);

@@ -61,17 +61,17 @@ const fireman = {
 //Collaborations
 const kanye = {
     name: "Kanye West",
-    image: ""
+    image: "img/kanye.jpg"
 }
 
 const michael = {
     name: "Michael Jackson",
-    image: ""
+    image: "img/michael.jpg"
 }
 
 const stevie = {
     name: "Stevie Wonder",
-    image: ""
+    image: "img/stevie.jpg"
 }
 
 //Awards
