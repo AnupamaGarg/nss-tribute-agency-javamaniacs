@@ -12,8 +12,8 @@ function writeMoreToDom(items, arg1, arg2, arg3, arg4, arg5, arg6) {
         
         newContent1 +=
         `<div class="media my-3">
-        <img class="align-self-center mr-3" src="${currentEvent[arg1]}" alt="${currentEvent[arg2]}">
-        <div class="media-body my-auto">
+        <img class="align-self-center mr-3 articleImg" src="${currentEvent[arg1]}" alt="${currentEvent[arg2]}">
+        <div class="media-body my-auto articleContent">
         <h3 class="mt-0">${currentEvent[arg2]}</h3>
         <h4 class="mt-0">${currentEvent[arg3]} - ${currentEvent[arg4]}</h4>
         <p>${currentEvent[arg5]}</p>
