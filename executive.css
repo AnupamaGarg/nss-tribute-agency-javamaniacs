@@ -6,3 +6,14 @@
      
 }
     
+#myButton2,#myButton,#myButton3,#myButton4{
+        display: inline-block;
+        display:justify;
+        color: blue;
+        text-align: justify
+        
+}
+#footer{
+        color: blanchedalmond;
+        background-color: black;
+}
