@@ -83,15 +83,33 @@ const award1 = {
 }
 
 const award2 = {
-    award: "Best Rock Song",
+    award: "Grammy for Best Rock Song",
     song: "Cut Me Some Slack",
     year: "2014"
 }
 
 const award3 = {
-    award: "Song of the Year",
+    award: "Grammy for Song of the Year",
     song: "Michelle",
     year: "1967"
+}
+
+const award4 = {
+    award: "Grammy for Best Score Soundtrack",
+    song: "Let it Be",
+    year: "1971"
+}
+
+const award5 = {
+    award: "Grammy for Best Solo Rock Vocal Performance",
+    song: "Helter Skelter",
+    year: "2011"
+}
+
+const award6 = {
+    award: "Critic's Choice Movie Award for Best song",
+    song: "Vanilla Sky",
+    year: "2002"
 }
 
 //Push data in to the appropriate array
@@ -99,7 +117,7 @@ careerDatabase.intro.push(introP);
 careerDatabase.skills.push(guitar, writing, singing);
 careerDatabase.works.push(quarrymen, beatles, wings, fireman);
 careerDatabase.collabs.push(kanye, michael, stevie);
-careerDatabase.awards.push(award1, award2, award3);
+careerDatabase.awards.push(award1, award2, award3, award4, award5, award6);
 
 //Creates function to save the database to local storage
 const saveDatabase = function (databaseObject, localStorageKey) {
