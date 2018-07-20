@@ -16,10 +16,12 @@
 
 .charcoal {
     background-color: #444448;
+    
 
 }
 body {
-    background-color:;
+    background: url(http://backgroundcheckall.com/wp-content/uploads/2017/12/neutral-background-5.jpg) no-repeat center fixed;
+    background-size: cover;
     
 }
 
@@ -27,6 +29,8 @@ body {
     display: flex;
     justify-content: center;
     background: radial-gradient(circle, rgba(68, 68, 72, 0.801), rgba(68, 68, 72, 0.801), rgba(68, 68, 72, 0.801), rgba(68, 68, 72, 0.801), rgb(235, 235, 235, 0.801), rgb(235, 235, 235, 0.801));
+    border: .5px black solid;
+    box-shadow: 0 8px 6px -6px black;
 
     color: #F9FAFB;
     text-shadow:
@@ -45,15 +49,17 @@ body {
 }
 .articleContent {
     padding: 1em;
+    
 }
 .articles {
     /* background-color: #8DCAD0; */
 }
 .main-articles {
+    box-shadow: 0 8px 6px -6px black;
     padding-bottom: 2em;
     padding-top: 2em;
     background-color: #70ADB0;
-    color: #444448;
+    color: black;
     /* text-shadow:
      -1px -1px 0 black,
      1px -1px 0 black,
@@ -68,6 +74,7 @@ body {
     background-color: #EBA862;
     padding-top: 2em;
     padding-bottom: 2em;
+    box-shadow: 0 8px 6px -6px black;
 }
 .button {
     color: #F9FAFB;
@@ -87,6 +94,7 @@ body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.pristineauction.com/27/272975/main_2-Paul-McCartney-Signed-Left-Handed-Hofner-Beatle-Bass-Guitar-Caiazzo-LOA-PSA-LOA-PristineAuction.com.jpg)no-repeat center fixed;
     background-size: cover;
     height: 27em;
+    
 }
 .jumbo {
     color: #F9FAFB;
@@ -101,6 +109,8 @@ body {
 .obj1 {
     font-size: 1.7em;
 }
+
+
 
 /* .articles {
     background: url(https://dalnn20hi8hmy.cloudfront.net/Lesson/notation_preview_image_5220eba4c7f843.02716660.png);

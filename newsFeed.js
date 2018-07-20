@@ -43,6 +43,7 @@ function writeToDom(items) {
               <div class="card-body">
               <h5 class="card-title">${currentEvent.location} - ${currentEvent.date}</h5>
               <p class="card-text">${currentEvent.type}</p>
+              <p class="card-text">${currentEvent.relevance}</p>
               <a href="${currentEvent.buytickets}" class="btn button">Buy Tickets</a>
               </div>
         </div>`
