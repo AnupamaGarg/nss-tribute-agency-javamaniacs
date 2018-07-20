@@ -1,13 +1,9 @@
-#jumbotron{
-        background-image: url("https://i.pinimg.com/236x/c6/3c/ca/c63ccaaf62edc2b20623cdc22a9c0fdf.jpg");
-        /* background-size:contain ; */
-        background-repeat: no-repeat;
-        background-size: cover;       
+
     
         
      
      
-}
+
     
 #myButton2,#myButton,#myButton3,#myButton4{
         display: inline-block;
