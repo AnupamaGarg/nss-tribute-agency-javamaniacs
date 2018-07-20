@@ -93,7 +93,8 @@ body {
 .jumbotron {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.pristineauction.com/27/272975/main_2-Paul-McCartney-Signed-Left-Handed-Hofner-Beatle-Bass-Guitar-Caiazzo-LOA-PSA-LOA-PristineAuction.com.jpg)no-repeat center fixed;
     background-size: cover;
-    height: 27em;
+    height: 27em; 
+    /* background-position-y: 1em; */
     
 }
 .jumbo {
