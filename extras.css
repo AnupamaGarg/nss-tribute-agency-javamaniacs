@@ -22,10 +22,9 @@ body{
     background-color: #EBA862;
 }
 .jumbotron {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(extras-img/Paul-groovy-colors.jpg) fixed;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(extras-img/Paul-groovy-colors.jpg) fixed no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 2%;
+    background-position-y: 3em;
     height: 30em;
 }
 
