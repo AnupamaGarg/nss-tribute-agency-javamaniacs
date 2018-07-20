@@ -1,22 +1,22 @@
-#jumbotron{
-        background-image: url("https://i.pinimg.com/236x/c6/3c/ca/c63ccaaf62edc2b20623cdc22a9c0fdf.jpg");
-        /* background-size:contain ; */
+body{ 
+        color: wheat;
+        background-image: url("https://www.paulmccartney.com/sites/default/files/collections/OneOnOneTour/FRESNO7.jpg");
         background-repeat: no-repeat;
-        background-size: cover;       
-    
+        background-size: cover;
+       
         
-     
-     
 }
-    
+
 #myButton2,#myButton,#myButton3,#myButton4{
         display: inline-block;
         display:justify;
-        color: blue;
+        color:wheat;
         text-align: justify
         
 }
 #footer{
-        color: blanchedalmond;
+        color: rgb(26, 25, 23);
         background-color: black;
+         position : fixed;
+     bottom : 0;
 }

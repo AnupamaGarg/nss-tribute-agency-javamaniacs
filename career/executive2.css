@@ -1,0 +1,9 @@
+#jumbotron{
+   color:blue;
+}
+#footer{
+    color: rgb(26, 25, 23);
+    background-color: black;
+     position : fixed;
+ bottom : 0;
+}
