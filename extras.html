@@ -8,55 +8,59 @@
     <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="extras.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Artist</a>
+
+    
+    <nav class="navbar navbar-expand-lg charcoal border border-dark">
+      <a class="navbar-brand text-white" href="#">Artist</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Career</a>
+            <a class="nav-link text-white" href="career/career.html">Career</a>
           </li>
           <li class="nav-item" id ="Personal">
-            <a class="nav-link" href="#">Personal</a>
+            <a class="nav-link text-white" href="#">Personal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="extras.html">Extras</a>
+            <a class="nav-link text-white" href="extras.html">Extras</a>
           </li>
           
         </ul>
       </div>
     </nav>
     
+    
     <!--Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid text-white">
       <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfrbg2Fs6oq3aKfsfJDuN5bL64gdiW4a5TPbPsPXFx2lwIYG3Rw" class="img-fluid" alt="Responsive image">
+        <h1 class="display-4">Extras Report</h1>
+        <p class="lead">Videos, Links, Tour Dates, Documentaries, and Charitable Causes.</p>
+        
       </div>
     </div>
 
     <!-- Spaceholder for  Official Website, Wikipedia, and Fan Forum buttons from extras.js file -->
-<div class="text-center my-3">
+<div class="text-center my-3 charcoal border border-dark">
+  <p class="d-inline mx-5" id="Wikipedia"></p>
     <p class="d-inline mx-5" id="Official"></p>
-    <p class="d-inline mx-5" id="Wikipedia"></p>
     <p class="d-inline mx-5" id="Fan-Forum"></p>
   </div>
 
     <!-- Spaceholder for Itunes and Spotify buttons from extras.js file -->
-
+    <div class="charcoal border border-dark">
     <p id="iTunes"></p>
     <p id="Spotify"></p>
-    
+  </div>
     <!-- add video -->
     
     
@@ -66,7 +70,7 @@
       
       <p>Click on the image to view.</p>
       
-      <a href="https://www.youtube.com/results?search_query=paul+mccartney+carpool+karaoke+">
+      <a href="https://www.youtube.com/watch?v=QjvzCTqkBDQ&t=7s">
         <img src="extras-img/carpool.jpg" alt="PaulMcCartney Carpool Karaoke" style="width:100%;height:auto;border:0">
       </a>
     </div>
@@ -94,7 +98,7 @@
       </div>
 
       <div class="Charity">
-          <h2>Charity Causes</h2>
+          <h2>Charitable Causes</h2>
           
           <p>Click on the image to view.</p>
           
@@ -105,13 +109,16 @@
     
     <!-- placeholder for tour dates -->
     
+    <div class="light-blue border border-dark">
     <p><h4>Tour Dates</h4></p>
     
+    <div class="charcoal text-light">
     <p id=Tour-Schedule></p>
-    
+  </div>
+</div>
 
 
-    <div class="page-footer">
+    <div class="page-footer charcoal">
         <h1>Example Page Footer</h1>
       </div>
 
