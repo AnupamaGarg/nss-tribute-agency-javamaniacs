@@ -20,3 +20,27 @@ body{
          position : fixed;
      bottom : 0;
 }
+
+.tangerine {
+        background-color: #EBA862;
+    }
+    
+    .off-white {
+        background-color: #F9FAFB;
+    }
+    
+    .turqouise {
+        background-color: #8DCAD0;
+    }
+    
+    .light-blue {
+        background-color: #70ADB0;
+    }
+    
+    .charcoal {
+        background-color: #444448;
+    }
+    
+    .text-char {
+        color: #444448
+    }
