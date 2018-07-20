@@ -62,35 +62,7 @@ skillsParent.innerHTML = skillsContent;
 
 skillsHeader.appendChild(skillsParent);
 
-// skills.innerHTML = `
-// <div class="card-deck border-0 py-1 text-light">
-//     <div class="card border-0 bg-transparent">
-//         <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[0].img} alt="Card image cap">
-//         <div class="card-body pb-0">
-//             <h5 class="card-title">${careerDatabase.skills[0].skill}</h5>
-//             <p class="card-text">${careerDatabase.skills[0].description}</p>
-//         </div>
-//     </div>
-//     <div class="card border-0 bg-transparent">
-//         <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[1].img} alt="Card image cap">
-//         <div class="card-body pb-0">
-//             <h5 class="card-title">${careerDatabase.skills[1].skill}</h5>
-//             <p class="card-text">${careerDatabase.skills[1].description}</p>
-//         </div>
-//     </div>
-//     <div class="card border-0 bg-transparent">
-//         <img class="card-img-top icon mx-auto" src=${careerDatabase.skills[2].img} alt="Card image cap">
-//         <div class="card-body pb-0">
-//             <h5 class="card-title">${careerDatabase.skills[2].skill}</h5>
-//             <p class="card-text">${careerDatabase.skills[2].description}</p>
-//         </div>
-//     </div>
-// </div>`
-
-//skillContainer.appendChild(skills);
-
-
-//Creates the 'works' cards
+//Creates the 'works' cards container
 const works = createContainer();
 const worksHeader = createContainer();
 worksHeader.innerHTML = `<h2 class = "text-center text-char">Notable Work</h2>`;
@@ -98,35 +70,7 @@ worksHeader.innerHTML = `<h2 class = "text-center text-char">Notable Work</h2>`;
 careerContent.appendChild(worksHeader);
 worksHeader.appendChild(works)
 
-// works.innerHTML = 
-// `<div class="card-group shadows my-3 ">
-//     <div class="card">
-//             <div class="card-body">
-//                 <h5 class="card-title">${careerDatabase.works[0].bandName}</h5>
-//                 <p class="card-text">${careerDatabase.works[0].about}</p>
-//             </div>
-//     </div>
-//         <div class="card">
-//                 <div class="card-body">
-//                     <h5 class="card-title">${careerDatabase.works[1].bandName}</h5>
-//                     <p class="card-text">${careerDatabase.works[1].about}</p> 
-
-//                 </div>
-//     </div>
-//             <div class="card">
-//                     <div class="card-body">
-//                         <h5 class="card-title">${careerDatabase.works[2].bandName}</h5>
-//                         <p class="card-text">${careerDatabase.works[2].about}</p>
-//                     </div>
-//     </div>
-//         <div class="card">
-//                     <div class="card-body">
-//                         <h5 class="card-title">${careerDatabase.works[3].bandName}</h5>
-//                         <p class="card-text">${careerDatabase.works[3].about}</p>
-//                     </div>
-//         </div>
-// </div>`;
-
+//Loop function that loops through his works and creates a card for each one 
 let worksLoop = () => {
     let loop = "";
     for (let i = 0; i < careerDatabase.works.length; i++) {
@@ -141,11 +85,14 @@ let worksLoop = () => {
 return loop;
 }
 
+//Calls the works loop function
 let worksCards = worksLoop();
+//Puts the works cards inside of the card group div
 let worksContent = `<div class="card-group shadows my-3 rounded">${worksCards}</div>`
 let worksParent = createContainer();
 worksParent.innerHTML = worksContent;
 
+//Appends the card group to the page
 careerContent.appendChild(worksParent);
 
 
@@ -236,15 +183,8 @@ let awardsLoop = () => {
     let loop = "";
     for (let i = 0; i < careerDatabase.awards.length; i++) {
     loop += 
-            // `<div class="card border-0">
-            //     <div class="card-body">
-            //         <h5 class="card-title">Award: ${careerDatabase.awards[i].award}</h5>
-            //         <p class="card-text">Song: ${careerDatabase.awards[i].song}</p>
-            //         <p class="card-text">Song: ${careerDatabase.awards[i].year}</p>
-            //     </div>
-            // </div>`
             `<li class="media my-2 col-md-6">
-              <img class="mr-3 medal" src="img/medal.svg" alt="Generic placeholder image">
+              <img class="mr-3 medal" src="img/medal.svg" alt="gold medal">
               <div class="media-body">
                 <h5 class="mt-0 mb-1">${careerDatabase.awards[i].award}</h5>
                 <p>${careerDatabase.awards[i].song} | ${careerDatabase.awards[i].year}</p>
@@ -255,7 +195,7 @@ return loop;
 }
 
 let awardCards = awardsLoop();
-let awardContent = `<ul class="list-unstyled row">${awardCards}</ul><p class="text-center">Plus a whole lot more</p>`
+let awardContent = `<ul class="list-unstyled row">${awardCards}</ul><h5 class="text-center">Plus a whole lot more</h5>`
 let awardParent = createContainer();
 awardParent.innerHTML = awardContent;
 
