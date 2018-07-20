@@ -11,7 +11,7 @@ function writeMoreToDom(items, arg1, arg2, arg3, arg4, arg5, arg6) {
         let currentEvent = events[items][i];
         
         newContent1 +=
-        `<div class="media my-3">
+        `<div class="media my-3 main-articles">
         <img class="align-self-center mr-3 articleImg" src="${currentEvent[arg1]}" alt="${currentEvent[arg2]}">
         <div class="media-body my-auto articleContent">
         <h3 class="mt-0">${currentEvent[arg2]}</h3>
@@ -30,7 +30,7 @@ writeMoreToDom("artistHeadlines", "image", "title", "date", "location", "content
 mainContent.innerHTML += `<h2 class="headLine">Upcoming Events in Nashville</h2>`
 
 function writeToDom(items) {
-    let newContent2 = `<div class="flex-row d-flex justify-content-around">`
+    let newContent2 = `<div class="flex-row d-flex justify-content-around eventsDiv">`
 
     // this loop runs though the things in the key I passed my function. Using [] for the items instead of items. tells it to evaluate what is in there instead of trying to find an items key.
     for (let i = 0; i < events[items].length; i++) {
@@ -43,7 +43,8 @@ function writeToDom(items) {
               <div class="card-body">
               <h5 class="card-title">${currentEvent.location} - ${currentEvent.date}</h5>
               <p class="card-text">${currentEvent.type}</p>
-              <a href="${currentEvent.buytickets}" class="btn btn-primary">Buy Tickets</a>
+              <p class="card-text">${currentEvent.relevance}</p>
+              <a href="${currentEvent.buytickets}" class="btn button">Buy Tickets</a>
               </div>
         </div>`
     }
