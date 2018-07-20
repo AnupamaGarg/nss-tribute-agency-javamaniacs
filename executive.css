@@ -1,0 +1,22 @@
+body{ 
+        color: wheat;
+        background-image: url("https://www.paulmccartney.com/sites/default/files/collections/OneOnOneTour/FRESNO7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+        
+}
+
+#myButton2,#myButton,#myButton3,#myButton4{
+        display: inline-block;
+        display:justify;
+        color:wheat;
+        text-align: justify
+        
+}
+#footer{
+        color: rgb(26, 25, 23);
+        background-color: black;
+         position : fixed;
+     bottom : 0;
+}
