@@ -1,4 +1,4 @@
-document.getElementById('Career').onclick = function URL() {
+document.getElementById('career').onclick = function URL() {
     location.href = 'career.html'};
 document.getElementById('Personal').onclick = function URL() {
     location.href = 'personal.html'};
