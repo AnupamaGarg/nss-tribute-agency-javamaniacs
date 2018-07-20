@@ -1,8 +1,33 @@
+.tangerine {
+    background-color: #EBA862;
+}
+
+.off-white {
+    background-color: #F9FAFB;
+}
+
+.turqouise {
+    background-color: #8DCAD0;
+}
+
+.light-blue {
+    background-color: #70ADB0;
+}
+
+.charcoal {
+    background-color: #444448;
+}
+
+.text-char {
+    color: #444448
+}
+
 .jumbotron {
-    background: url(img/headphones.jpg);
+    background:linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(img/headphones.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 70%;
+    /* background-attachment: fixed; */
+    background-position: 50% 65%;
 }
 
 .icon {
@@ -17,4 +42,14 @@
 -webkit-box-shadow: 10px 8px 42px -10px rgba(79,79,79,1);
 -moz-box-shadow: 10px 8px 42px -10px rgba(79,79,79,1);
 box-shadow: 10px 8px 42px -10px rgba(79,79,79,1);
+}
+
+.nav-shadow {
+    -webkit-box-shadow: 10px 8px 42px -10px rgba(0,0,0,1);
+-moz-box-shadow: 10px 8px 42px -10px rgba(0,0,0,1);
+box-shadow: 10px 8px 42px -10px rgba(0,0,0,1);
+}
+
+.medal {
+    height: 64px;
 }
